@@ -1,0 +1,25 @@
+New version 2.95.  
+
+The main programs are pretty vanilla C++, but there are also a bunch
+of C-shell scripts.  The system is known to work on Linux and should
+work on any *nix system (BSD, Solaris, etc.) with minimal tweaking.
+The main programs used to run under Windows, compiled with OpenWatcom
+(www.openwatcom.org), but that hasn't been tested for a while; you'll
+also need Cygwin if you want to run any training or tuning under
+Windows (all data files are architecture independent, so you can
+train a system under Linux and then just copy everything but the
+executables over to Windows).
+
+CHANGES SINCE 11/2009 RELEASE:
+
+Added parameter tuner.
+
+Revamped scoring to use an explicit feature vector rather than a
+series of member variables, which makes it much easier to add new
+features.  Added a bunch of new features to the log-linear model.
+
+Removed a bunch of obsolete code and settings.
+
+This release is all in one archive, and includes a sample translation
+system for English to Haitian Creole, with instructions for building
+the corresponding Haitian Creole to English system.
